@@ -1,25 +1,28 @@
 WBA2Phase2
 ==========
 
-Blitzer App
+Verleih-System
 
-  
+Es wird ein System entwickelt, das es Benutzern ermöglicht, untereinander Sachen zu leihen.
 
-Wir wollen eine Blitzer App entwickeln, die es dem Benutzer ermöglicht, Blitzer in der Nähe seiner GPS-Daten zu finden.
-Benutzer können veraltete Blitzer löschen: Wenn genug Benutzer gevotet haben, wird der Blitzer gelöscht.
-Der Blitzer wird mit einer Beschreibung, seiner Position, dem Datum der Erstentdeckung, dem Tempolimit und einem optionalen Bild gespeichert.
-Die Benutzer können kommentieren. 
+Die Benutzer können eine Liste anfertigen, was sie zum Verleih anbieten oder was sie gerne leihen würden.
+
+Man bekommt eine Nachricht, wenn jemand einen Wunschgegenstand anbietet oder sich jemand für einen Gegenstand interessiert.
+
+Eine Suchfunktion die sofort die aktuell zum Verleih stehenden Gegenstände anzeigt. 
+
+Optional kann man Pfand verlangen oder Sachen reservieren.
 
 
-**Synchron:** 
+Die Sachen werden mit Beschreibung, Bild und dem möglichen Verleihzeitraum gespeichert.
 
-  GPS-Daten übertragen - alle Blitzer in der Nähe bekommen
-  
-  Blitzer könnnen eingetragen und ausgetragen werden
-  
-  Kommentare anzeigen
-  
-  
-**Asynchron:**
 
-  Neue Blitzer in der Nähe werden automatisch angezeigt
+Synchron:
+
+  - Suche
+  - Freunde hinzufügen
+
+Asynchron:
+
+  - Treffer Verleihliste - Wunschliste wurde gefunden
+  - Nachrichten
