@@ -11,7 +11,7 @@ Der Blitzer wird mit einer Beschreibung, seiner Position, dem Datum der Erstentd
 Die Benutzer können kommentieren. 
 
 
-Synchron: 
+**Synchron:** 
 
   GPS-Daten übertragen - alle Blitzer in der Nähe bekommen
   
@@ -20,6 +20,6 @@ Synchron:
   Kommentare anzeigen
   
   
-Asynchron:
+**Asynchron:**
 
   Neue Blitzer in der Nähe werden automatisch angezeigt
