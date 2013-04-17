@@ -1,7 +1,7 @@
 WBA2Phase2
 ==========
 
-Verleih-System
+**Verleih-System**
 
 Es wird ein System entwickelt, das es Benutzern ermöglicht, untereinander Sachen zu leihen.
 
@@ -17,12 +17,12 @@ Optional kann man Pfand verlangen oder Sachen reservieren.
 Die Sachen werden mit Beschreibung, Bild und dem möglichen Verleihzeitraum gespeichert.
 
 
-Synchron:
+**Synchron:**
 
   - Suche
   - Freunde hinzufügen
 
-Asynchron:
+**Asynchron:**
 
   - Treffer Verleihliste - Wunschliste wurde gefunden
   - Nachrichten
