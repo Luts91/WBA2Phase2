@@ -19,6 +19,7 @@ Die Sachen werden mit Beschreibung, Bild und dem möglichen Verleihzeitraum gesp
 
 **Synchron:**
 
+  - Anmeldung
   - Suche
   - Freunde hinzufügen
 
@@ -31,3 +32,4 @@ Die Sachen werden mit Beschreibung, Bild und dem möglichen Verleihzeitraum gesp
 
   - Die Objekte die zum Verleih angeboten werden müssen in Kategorien eingeteilt werden, 
     um eine effiziente Suche zu ermöglichen
+  
