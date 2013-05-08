@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<benutzerliste>
+  <benutzer>
+    <Name>Lutz</Name>
+    <Passwort>ichbindergeilste123</Passwort>
+    <Email>lutz.schoenfelder@gmail.com</Email>
+    <Wohnort>
+      <Stadt>Wermelskirchen</Stadt>
+      <PLZ>42929</PLZ>
+      <Straße>Forstring</Straße>
+      <HausNr>8</HausNr>
+    </Wohnort>
+    <Bild>img.png</Bild>
+    <Wunschliste>
+      <Wunsch>Zollstock</Wunsch>
+    </Wunschliste>
+  </benutzer>
+</benutzerliste>

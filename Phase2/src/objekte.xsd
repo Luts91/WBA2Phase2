@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:element name="objekte">
+    <xs:complexType>
+      <xs:sequence>
+		<xs:element name="objekt" minOccurs="0" maxOccurs="unbounded">      
+	      <xs:complexType>
+	      	<xs:sequence>
+	      
+		
+		        <xs:element name="Name" type="xs:string" />
+		        <xs:element name="Verleiher" type="xs:string" />
+		        
+		        <xs:element name="Tags">
+		          <xs:complexType>
+		            <xs:sequence>
+		              <xs:element name="Tag" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		            </xs:sequence>
+		          </xs:complexType>
+		        </xs:element>        
+		
+		        <xs:element name="Kategorie" type="xs:string" />
+		        <xs:element name="Beschreibung" type="xs:string" />
+		        <xs:element name="ZeitraumStart" type="xs:date" />
+		        <xs:element name="ZeitraumEnde" type="xs:date" />
+		        <xs:element name="Pfand" type="xs:decimal" />
+		
+		        <xs:element name="Bilder">
+		          <xs:complexType>
+		            <xs:sequence>
+		              <xs:element name="Bild" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		            </xs:sequence>
+		          </xs:complexType>
+		        </xs:element>      
+			</xs:sequence>
+		</xs:complexType>
+		</xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

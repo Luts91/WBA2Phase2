@@ -11,5 +11,14 @@
 	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jersey-server-1.1.5.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jettison-1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jsr311-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jaxb-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jaxb-api-doc.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jaxb-api-src.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jaxb-impl.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jaxb-impl.src.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jaxb-impl-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jaxb-xjc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jaxb-xjc.src.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jaxb-xjc-javadoc.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
