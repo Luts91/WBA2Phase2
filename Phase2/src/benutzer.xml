@@ -1,18 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <benutzerliste>
-  <benutzer>
-    <Name>Lutz</Name>
-    <Passwort>ichbindergeilste123</Passwort>
-    <Email>lutz.schoenfelder@gmail.com</Email>
-    <Wohnort>
-      <Stadt>Wermelskirchen</Stadt>
-      <PLZ>42929</PLZ>
-      <Straße>Forstring</Straße>
-      <HausNr>8</HausNr>
-    </Wohnort>
-    <Bild>img.png</Bild>
-    <Wunschliste>
-      <Wunsch>Zollstock</Wunsch>
-    </Wunschliste>
-  </benutzer>
+    <benutzer>
+        <Name>Lutz</Name>
+        <Passwort>ichbindergeilste123</Passwort>
+        <Email>lutz.schoenfelder@gmail.com</Email>
+        <Wohnort>
+            <Stadt>Wermelskirchen</Stadt>
+            <PLZ>42929</PLZ>
+            <Strasse>Forstring</Strasse>
+            <HausNr>8</HausNr>
+        </Wohnort>
+        <Bild>img.png</Bild>
+        <Wunschliste>
+            <Wunsch>Zollstock</Wunsch>
+        </Wunschliste>
+    </benutzer>
+    <benutzer>
+        <Name>Max Mustermann</Name>
+        <Passwort>ichbindergeilste123</Passwort>
+        <Email>maxmustermann@gmail.com</Email>
+        <Wohnort>
+            <Stadt>Gummersbach</Stadt>
+            <PLZ>1234</PLZ>
+            <Strasse>Strasse</Strasse>
+            <HausNr>88</HausNr>
+        </Wohnort>
+        <Bild>img.png</Bild>
+        <Wunschliste>
+            <Wunsch>Zollstock</Wunsch>
+        </Wunschliste>
+    </benutzer>
+    
 </benutzerliste>

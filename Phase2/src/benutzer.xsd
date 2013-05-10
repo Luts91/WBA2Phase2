@@ -17,7 +17,7 @@
 		            <xs:sequence>
 		              <xs:element name="Stadt" type="xs:string" />
 		              <xs:element name="PLZ" type="xs:string" />
-		              <xs:element name="Straße" type="xs:string" />
+		              <xs:element name="Strasse" type="xs:string" />
 		              <xs:element name="HausNr" type="xs:string" />
 		            </xs:sequence>
 		          </xs:complexType>

@@ -15,54 +15,54 @@ import generated.Benutzerliste.Benutzer;
 
 public class Test {
 
-  private static final String BOOKSTORE_XML = "C:/Users/Lutz/git/WBA2Phase2/Phase2/src/benutzer.xml";
+  private static final String BENUTZERLISTE_XML = "C:/Users/Lutz/git/WBA2Phase2/Phase2/src/benutzer.xml";
 
   public static void main(String[] args) throws JAXBException, IOException {
-
-    ArrayList<Benutzerliste> bookList = new ArrayList<Benutzerliste>();
-/*
-    // create books
-    Book book1 = new Book();
-    book1.setIsbn("978-0060554736");
-    book1.setName("The Game");
-    book1.setAuthor("Neil Strauss");
-    book1.setPublisher("Harpercollins");
-    bookList.add(book1);
-
-    Book book2 = new Book();
-    book2.setIsbn("978-3832180577");
-    book2.setName("Feuchtgebiete");
-    book2.setAuthor("Charlotte Roche");
-    book2.setPublisher("Dumont Buchverlag");
-    bookList.add(book2);
-
-    // create bookstore, assigning book
-    Bookstore bookstore = new Bookstore();
-    bookstore.setName("Fraport Bookstore");
-    bookstore.setLocation("Frankfurt Airport");
-    bookstore.setBookList(bookList);
-*/
     // create JAXB context and instantiate marshaller
     JAXBContext context = JAXBContext.newInstance(Benutzerliste.class);
     Marshaller m = context.createMarshaller();
     m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-/*
-    // Write to System.out
-    m.marshal(bookstore, System.out);
-
-    // Write to File
-    m.marshal(bookstore, new File(BOOKSTORE_XML));
-*/
+    
     // get variables from our xml file, created before
     System.out.println();
     System.out.println("Output from our XML File: ");
     Unmarshaller um = context.createUnmarshaller();
-    Benutzerliste bookstore2 = (Benutzerliste) um.unmarshal(new FileReader(BOOKSTORE_XML));
-    List<Benutzer> list = bookstore2.getBenutzer();
-    for (Benutzer book : list) {
-      System.out.println("Name: " + book.getName());
-      System.out.println("Email: "+book.getEmail());
-      System.out.println("Wohnort: "+book.getWohnort().getPLZ()+" "+book.getWohnort().getStadt()+", "+book.getWohnort().getStraﬂe()+" "+book.getWohnort().getHausNr());
+    Benutzerliste benutzerliste = (Benutzerliste) um.unmarshal(new FileReader(BENUTZERLISTE_XML));
+    List<Benutzer> list = benutzerliste.getBenutzer();
+    
+    
+    Benutzer test = new Benutzer();
+    test.setName("HOMO");
+    test.setBild("img.png");
+    test.setEmail("homo@ho.mo");
+    test.setPasswort("1234");
+    
+    Benutzer.Wohnort wo = new Benutzer.Wohnort();
+    wo.setHausNr("1");
+    wo.setPLZ("1234");
+    wo.setStadt("teststadt");
+    wo.setStrasse("homoallee");
+    test.setWohnort(wo);
+    
+    Benutzer.Wunschliste wu = new Benutzer.Wunschliste();
+    wu.getWunsch().add("Dildo");
+    test.setWunschliste(wu);
+    
+    benutzerliste.getBenutzer().add(test);
+
+    // Write to File
+    m.marshal(benutzerliste, new File(BENUTZERLISTE_XML));
+    
+    for (Benutzer b : list) {
+      System.out.println("Name: " + b.getName());
+      System.out.println("Email: "+b.getEmail());
+      System.out.println("Wohnort: "+b.getWohnort().getPLZ()+" "+b.getWohnort().getStadt()+", "+b.getWohnort().getStrasse()+" "+b.getWohnort().getHausNr());
+      
+      System.out.println("Wunschliste: ");
+      for (String wunsch : b.getWunschliste().getWunsch()){
+    	  System.out.println(wunsch);
+      }
+      System.out.println();
     }
   }
 } 

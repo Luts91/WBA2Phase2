@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.6 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // ƒnderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2013.05.08 um 05:24:36 PM CEST 
+// Generiert: 2013.05.10 um 05:09:15 PM CEST 
 //
 
 
@@ -42,7 +42,7 @@ import javax.xml.bind.annotation.XmlType;
  *                           &lt;sequence>
  *                             &lt;element name="Stadt" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                             &lt;element name="PLZ" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                             &lt;element name="Straﬂe" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                             &lt;element name="Strasse" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                             &lt;element name="HausNr" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                           &lt;/sequence>
  *                         &lt;/restriction>
@@ -133,7 +133,7 @@ public class Benutzerliste {
      *                 &lt;sequence>
      *                   &lt;element name="Stadt" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *                   &lt;element name="PLZ" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *                   &lt;element name="Straﬂe" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *                   &lt;element name="Strasse" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *                   &lt;element name="HausNr" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *                 &lt;/sequence>
      *               &lt;/restriction>
@@ -341,7 +341,7 @@ public class Benutzerliste {
          *       &lt;sequence>
          *         &lt;element name="Stadt" type="{http://www.w3.org/2001/XMLSchema}string"/>
          *         &lt;element name="PLZ" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *         &lt;element name="Straﬂe" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         *         &lt;element name="Strasse" type="{http://www.w3.org/2001/XMLSchema}string"/>
          *         &lt;element name="HausNr" type="{http://www.w3.org/2001/XMLSchema}string"/>
          *       &lt;/sequence>
          *     &lt;/restriction>
@@ -355,7 +355,7 @@ public class Benutzerliste {
         @XmlType(name = "", propOrder = {
             "stadt",
             "plz",
-            "stra\u00dfe",
+            "strasse",
             "hausNr"
         })
         public static class Wohnort {
@@ -364,8 +364,8 @@ public class Benutzerliste {
             protected String stadt;
             @XmlElement(name = "PLZ", required = true)
             protected String plz;
-            @XmlElement(name = "Stra\u00dfe", required = true)
-            protected String straﬂe;
+            @XmlElement(name = "Strasse", required = true)
+            protected String strasse;
             @XmlElement(name = "HausNr", required = true)
             protected String hausNr;
 
@@ -418,27 +418,27 @@ public class Benutzerliste {
             }
 
             /**
-             * Ruft den Wert der straﬂe-Eigenschaft ab.
+             * Ruft den Wert der strasse-Eigenschaft ab.
              * 
              * @return
              *     possible object is
              *     {@link String }
              *     
              */
-            public String getStraﬂe() {
-                return straﬂe;
+            public String getStrasse() {
+                return strasse;
             }
 
             /**
-             * Legt den Wert der straﬂe-Eigenschaft fest.
+             * Legt den Wert der strasse-Eigenschaft fest.
              * 
              * @param value
              *     allowed object is
              *     {@link String }
              *     
              */
-            public void setStraﬂe(String value) {
-                this.straﬂe = value;
+            public void setStrasse(String value) {
+                this.strasse = value;
             }
 
             /**
