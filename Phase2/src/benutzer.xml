@@ -30,5 +30,39 @@
             <Wunsch>Zollstock</Wunsch>
         </Wunschliste>
     </benutzer>
-    
+    <benutzer>
+        <Name>HOMO</Name>
+        <Passwort>1234</Passwort>
+        <Email>homo@ho.mo</Email>
+        <Wohnort>
+            <Stadt>teststadt</Stadt>
+            <PLZ>1234</PLZ>
+            <Strasse>homoallee</Strasse>
+            <HausNr>1</HausNr>
+        </Wohnort>
+        <Bild>img.png</Bild>
+        <Wunschliste>
+            <Wunsch>Dildo</Wunsch>
+        </Wunschliste>
+    </benutzer>
+    <benutzer>
+        <Name>HOMO</Name>
+        <Passwort>1234</Passwort>
+        <Email>homo@ho.mo</Email>
+        <Wohnort>
+            <Stadt>teststadt</Stadt>
+            <PLZ>1234</PLZ>
+            <Strasse>homoallee</Strasse>
+            <HausNr>1</HausNr>
+        </Wohnort>
+        <Bild>img.png</Bild>
+        <Wunschliste>
+            <Wunsch>Dildo</Wunsch>
+        </Wunschliste>
+    </benutzer>
+    <benutzer>
+        <Name>peter</Name>
+        <Passwort>wetwte</Passwort>
+        <Wohnort/>
+    </benutzer>
 </benutzerliste>

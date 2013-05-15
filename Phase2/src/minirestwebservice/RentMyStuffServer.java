@@ -3,7 +3,7 @@ package minirestwebservice;
 import com.sun.grizzly.http.SelectorThread;
 import com.sun.jersey.api.container.grizzly.GrizzlyServerFactory;
 
-public class HalloWeltTestServer
+public class RentMyStuffServer
 {
    public static void main( String[] args ) throws Exception
    {

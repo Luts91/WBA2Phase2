@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.6 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2013.05.10 um 05:09:15 PM CEST 
+// Generiert: 2013.05.15 um 05:46:39 PM CEST 
 //
 
 
@@ -37,35 +37,35 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Benutzerliste }
+     * Create an instance of {@link Objekte }
      * 
      */
-    public Benutzerliste createBenutzerliste() {
-        return new Benutzerliste();
+    public Objekte createObjekte() {
+        return new Objekte();
     }
 
     /**
-     * Create an instance of {@link Benutzerliste.Benutzer }
+     * Create an instance of {@link Objekte.Objekt }
      * 
      */
-    public Benutzerliste.Benutzer createBenutzerlisteBenutzer() {
-        return new Benutzerliste.Benutzer();
+    public Objekte.Objekt createObjekteObjekt() {
+        return new Objekte.Objekt();
     }
 
     /**
-     * Create an instance of {@link Benutzerliste.Benutzer.Wohnort }
+     * Create an instance of {@link Objekte.Objekt.Tags }
      * 
      */
-    public Benutzerliste.Benutzer.Wohnort createBenutzerlisteBenutzerWohnort() {
-        return new Benutzerliste.Benutzer.Wohnort();
+    public Objekte.Objekt.Tags createObjekteObjektTags() {
+        return new Objekte.Objekt.Tags();
     }
 
     /**
-     * Create an instance of {@link Benutzerliste.Benutzer.Wunschliste }
+     * Create an instance of {@link Objekte.Objekt.Bilder }
      * 
      */
-    public Benutzerliste.Benutzer.Wunschliste createBenutzerlisteBenutzerWunschliste() {
-        return new Benutzerliste.Benutzer.Wunschliste();
+    public Objekte.Objekt.Bilder createObjekteObjektBilder() {
+        return new Objekte.Objekt.Bilder();
     }
 
 }

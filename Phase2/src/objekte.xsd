@@ -22,8 +22,8 @@
 		
 		        <xs:element name="Kategorie" type="xs:string" />
 		        <xs:element name="Beschreibung" type="xs:string" />
-		        <xs:element name="ZeitraumStart" type="xs:date" />
-		        <xs:element name="ZeitraumEnde" type="xs:date" />
+		        <xs:element name="ZeitraumStart" type="xs:string" />
+		        <xs:element name="ZeitraumEnde" type="xs:string" />
 		        <xs:element name="Pfand" type="xs:decimal" />
 		
 		        <xs:element name="Bilder">

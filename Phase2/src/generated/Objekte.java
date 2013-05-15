@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.6 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2013.05.08 um 05:24:24 PM CEST 
+// Generiert: 2013.05.15 um 05:46:39 PM CEST 
 //
 
 
@@ -15,9 +15,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
-import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
@@ -50,8 +48,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *                   &lt;/element>
  *                   &lt;element name="Kategorie" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;element name="Beschreibung" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="ZeitraumStart" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *                   &lt;element name="ZeitraumEnde" type="{http://www.w3.org/2001/XMLSchema}date"/>
+ *                   &lt;element name="ZeitraumStart" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                   &lt;element name="ZeitraumEnde" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;element name="Pfand" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
  *                   &lt;element name="Bilder">
  *                     &lt;complexType>
@@ -141,8 +139,8 @@ public class Objekte {
      *         &lt;/element>
      *         &lt;element name="Kategorie" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="Beschreibung" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="ZeitraumStart" type="{http://www.w3.org/2001/XMLSchema}date"/>
-     *         &lt;element name="ZeitraumEnde" type="{http://www.w3.org/2001/XMLSchema}date"/>
+     *         &lt;element name="ZeitraumStart" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *         &lt;element name="ZeitraumEnde" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="Pfand" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
      *         &lt;element name="Bilder">
      *           &lt;complexType>
@@ -188,11 +186,9 @@ public class Objekte {
         @XmlElement(name = "Beschreibung", required = true)
         protected String beschreibung;
         @XmlElement(name = "ZeitraumStart", required = true)
-        @XmlSchemaType(name = "date")
-        protected XMLGregorianCalendar zeitraumStart;
+        protected String zeitraumStart;
         @XmlElement(name = "ZeitraumEnde", required = true)
-        @XmlSchemaType(name = "date")
-        protected XMLGregorianCalendar zeitraumEnde;
+        protected String zeitraumEnde;
         @XmlElement(name = "Pfand", required = true)
         protected BigDecimal pfand;
         @XmlElement(name = "Bilder", required = true)
@@ -323,10 +319,10 @@ public class Objekte {
          * 
          * @return
          *     possible object is
-         *     {@link XMLGregorianCalendar }
+         *     {@link String }
          *     
          */
-        public XMLGregorianCalendar getZeitraumStart() {
+        public String getZeitraumStart() {
             return zeitraumStart;
         }
 
@@ -335,10 +331,10 @@ public class Objekte {
          * 
          * @param value
          *     allowed object is
-         *     {@link XMLGregorianCalendar }
+         *     {@link String }
          *     
          */
-        public void setZeitraumStart(XMLGregorianCalendar value) {
+        public void setZeitraumStart(String value) {
             this.zeitraumStart = value;
         }
 
@@ -347,10 +343,10 @@ public class Objekte {
          * 
          * @return
          *     possible object is
-         *     {@link XMLGregorianCalendar }
+         *     {@link String }
          *     
          */
-        public XMLGregorianCalendar getZeitraumEnde() {
+        public String getZeitraumEnde() {
             return zeitraumEnde;
         }
 
@@ -359,10 +355,10 @@ public class Objekte {
          * 
          * @param value
          *     allowed object is
-         *     {@link XMLGregorianCalendar }
+         *     {@link String }
          *     
          */
-        public void setZeitraumEnde(XMLGregorianCalendar value) {
+        public void setZeitraumEnde(String value) {
             this.zeitraumEnde = value;
         }
 
