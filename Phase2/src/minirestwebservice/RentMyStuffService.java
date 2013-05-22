@@ -61,6 +61,13 @@ public class RentMyStuffService
 	   xmlm.writeBenutzer();
    }
    
+   @DELETE @Path("benutzer/{name}")
+   public void deleteBenutzer(@PathParam("name") String name){
+	   XMLMarshaller xmlm = new XMLMarshaller();
+	   xmlm.readBenutzer();
+	   xmlm.benutzerliste.getBenutzer().remove(xmlm.getBenutzer(name));
+	   xmlm.writeBenutzer();
+   }
    
    @GET @Path("objekte") @Produces( "text/xml" )
    public String objekteXml(@QueryParam("name") String name){
@@ -103,6 +110,14 @@ public class RentMyStuffService
 	   o.setPfand(new BigDecimal(pfand));
 	   
 	   xmlm.objekte.getObjekt().add(o);
+	   xmlm.writeObjekte();
+   }
+   
+   @DELETE @Path("objekte/{name}")
+   public void deleteObjekt(@PathParam("name") String name){
+	   XMLMarshaller xmlm = new XMLMarshaller();
+	   xmlm.readObjekte();
+	   xmlm.objekte.getObjekt().remove(xmlm.getObjekt(name));
 	   xmlm.writeObjekte();
    }
     
