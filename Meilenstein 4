@@ -1,0 +1,39 @@
+Topics:
+
+#Finden des gesuchten Objekts ohne zu viele unpassende Ergebnisse!
+#Finden des Obekts innerhalb des gewählten Umkeises
+#Privates senden von Nachrichten zwischen den beteiligten Personen
+#Keine penetranten push-nachrichten
+
+
+
+Publisher   = Anbieter des gesuchten Objekts
+
+Subscriber 	= "Kunde" der ein Objekt sucht 
+
+
+Publisher/Subscriber:
+
+		#Angebot (Objekte)[Objektname "String"; Beschreibung "String"]
+		#Zeitraum [Uhrzeit "string"]
+		#Orte (Wo liegt das Objekt (Ort, Straße, Haus-Nr.) [Ort "String"]
+		#Bestätigung (Ich verleihe ich verleihe nicht) [Nachricht "String"]
+		#Freundesliste (Wer kann von mir leihen) [Liste von Nutzern "String"]
+		##Was möchte ich leihen (Optional, da jeder Publisher auch Subscriber ist) [Objektliste "StringListe"]
+			
+
+Subscriber/Publisher:
+
+		#Freundesliste (Von wem kann ich leihen) [Nutzerliste "StringListe"]
+		#Wunsch-Objekt/Liste (Was will ich leihen) [Objektname/liste "String]
+		#Ort (In welchem Umkreis suche ich) [Ort "String"]	
+		#Zeitdauer (Wie lange möchte ich leihen) [Startdatum "String"; Enddatum "String"]
+			
+
+
+
+
+
+
+
+
