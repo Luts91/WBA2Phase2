@@ -29,11 +29,52 @@ Subscriber/Publisher:
 		#Ort (In welchem Umkreis suche ich) [Ort "String"]	
 		#Zeitdauer (Wie lange möchte ich leihen) [Startdatum "String"; Enddatum "String"]
 			
+			
+			
 
 
+Topic: 		Verleihobjekt
+Subscriber:	Benutzer der das Objekt verleihen will
+Publisher:	Benutzer der das Objekt leihen will
+Daten:		Objekt.Name
+Beschreibung:	Sobald ein Benutzer ein Objekt zum Verleih anbietet, wird ein neues Topic erstellt und der Benutzer
+		automatisch zum Subscriber. Wenn jemand das Objekt leiht, wird der Benutzer benachrichtgt
 
+Topic:		Verleihvorgang
+Subscirber:	Benutzer der das Objekt leihen will
+Publisher:	Benutzer der das Objekt verleihen will
+Daten:		Objekt.Name
+Beschreibung:	Sobald man eine Anfrage zur Ausleihung eines Objektes gestellt hat, wird ein neues Topic erstellt
+		und der Benutzer automatisch zum Subscriber. Wenn der Verleiher den Verleih bestätigt oder Ablehnt wird
+		der Leiher benachrichtigt
 
+Topic:		Freundesanfrage
+Subscriber:	Benutzer
+Publisher:	Benutzer der eine Freundschaftsanfrage schickt
+Daten:		Benutzer.Name
+Beschreibung:	Für jeden Benutzer gibt es ein Topic für seine Freundschaftsanfragen dessen Subscriber er selber ist.
+		Wenn ein anderer Benutzer eine Freundschaftsanfrage stellt wird der Benutzer benachrichtigt.
 
+Topic:		Freundesanfragevorgang
+Subscriber:	Benutzer der eine Freundschaftsanfrage geschickt hat
+Publisher:	Benutzer der die Freundschaftsanfrage bestätigt
+Daten:		Benutzer.Name
+Beschreibung:	Sobald ein Benutzer eine Freundschaftsanfrage schickt, wird ein neues Topic erstellt und der Benutzer
+		automatisch zum Subscriber. Wenn der andere Benutzer die Freundschaftsanfrage bestätigt wird der Benutzer
+		benachrichtigt.
 
+Topic:		Wunschliste
+Subscriber:	Alle Freunde das Benutzers
+Publisher:	Benutzer der etwas zu seiner Wunschliste hinzufügt
+Daten:		Objekt.Name
+Beschreibung:	Für jeden Benutzer gibt es ein Topic für seine Wunschliste, dessen Subscriber alle seine Freunde sind.
+		Sobald der Benutzer etwas zu seiner Wunschliste hinzufügt werden alle Freunde benachrichtigt.
+
+Topic:		Wunschliste Treffer
+Subscriber:	Benutzer der etwas auf seiner Wunschliste hat
+Publisher:	Benutzer der ein Objekt der Wunschliste zum Verleih anbietet
+Daten:		Objekt.Name
+Beschreibung:	Der Benutzer ist Subscriber seiner eigenen Wunschliste, wenn jemand ein Objekt zum Verleih anbietet, 
+		welches auf der Wunschliste ist, wird der Benutzer benachrichtigt.
 
 
