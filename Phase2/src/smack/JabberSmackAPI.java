@@ -41,11 +41,8 @@ public class JabberSmackAPI {
         // Get the node
         LeafNode node = mgr.getNode(nodeName);
 
-        // Publish an Item with payload
-       // node.send(new PayloadItem<SimplePayload>("test1", 
-        //    new SimplePayload("book", null, "ewswerzrwztzry")));
         node.publish(new PayloadItem<SimplePayload>(id, 
-                new SimplePayload(id, null,payload)));
+        		new SimplePayload(id,null,payload)));
     }
  
     public void subscribe(Connection connection, String nodeName) throws XMPPException{
@@ -58,6 +55,9 @@ public class JabberSmackAPI {
         node.addItemEventListener(new ItemEventCoordinator());
         node.subscribe(connection.getUser()+"@localhost");
     }
+    
+    
+    
     public static void main(String args[]) throws XMPPException, IOException
     {
 	    // declare variables
@@ -66,9 +66,11 @@ public class JabberSmackAPI {
 	 
 	    // Enter your login information here
 	    ch.login("user1", "12345");
-	    //c.createNode();
-	    c.publishItem(ch.connection,"testNode","test1","testpayload");
-	    c.subscribe(ch.connection,"testNode");
+	    //c.createNode(ch.connection,"testNode2");
+	    c.subscribe(ch.connection,"testNode2");
+	    c.publishItem(ch.connection,"testNode2","test1","<bla>testpayload</bla>");
+
+	    //c.publishItem(ch.connection,"testNode2","test2","<bla>testpayload</bla>");
 	    ch.disconnect();
 	    System.exit(0);
     }
