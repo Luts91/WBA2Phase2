@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<objekte>
+    <objekt>
+        <Name>Zollstock</Name>
+        <Verleiher>Pascal</Verleiher>
+        <Tags>
+            <Tag>Messung</Tag>
+        </Tags>
+        <Kategorie>Werkzeug</Kategorie>
+        <Beschreibung>Mein liebster Zollstock</Beschreibung>
+        <ZeitraumStart>2013-01-01</ZeitraumStart>
+        <ZeitraumEnde>2014-01-01</ZeitraumEnde>
+        <Pfand>10.0</Pfand>
+        <Bilder>
+            <Bild>/img.png</Bild>
+        </Bilder>
+    </objekt>
+</objekte>

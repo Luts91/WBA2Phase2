@@ -20,5 +20,9 @@
 	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jaxb-xjc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jaxb-xjc.src.zip"/>
 	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/jaxb-xjc-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/smack_3_3_0/smack.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/smack_3_3_0/smackx.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/smack_3_3_0/smackx-debug.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lutz/git/WBA2Phase2/Phase2/lib/smack_3_3_0/smackx-jingle.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

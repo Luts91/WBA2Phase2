@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:element name="benutzerliste">
+  	<xs:complexType>
+  		<xs:sequence>
+		  <xs:element name="benutzer" minOccurs="0" maxOccurs="unbounded">
+		    <xs:complexType>
+		      <xs:sequence>
+		
+		        <xs:element name="Name" type="xs:string" />
+		        <xs:element name="Passwort" type="xs:string" />
+		        <xs:element name="Email" type="xs:string" />
+		
+		        <xs:element name="Wohnort">
+		          <xs:complexType>
+		            <xs:sequence>
+		              <xs:element name="Stadt" type="xs:string" />
+		              <xs:element name="PLZ" type="xs:string" />
+		              <xs:element name="Strasse" type="xs:string" />
+		              <xs:element name="HausNr" type="xs:string" />
+		            </xs:sequence>
+		          </xs:complexType>
+		        </xs:element>
+		
+		        <xs:element name="Bild" type="xs:string" />
+		
+		
+		        <xs:element name="Wunschliste">
+		          <xs:complexType>
+		            <xs:sequence>
+		              <xs:element name="Wunsch" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		            </xs:sequence>
+		          </xs:complexType>
+		        </xs:element>        
+		
+		      </xs:sequence>
+		    </xs:complexType>
+		  </xs:element>
+		</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
