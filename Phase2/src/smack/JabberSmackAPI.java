@@ -48,12 +48,12 @@ public class JabberSmackAPI {
                 new SimplePayload(id, null,payload)));
     }
  
-    public void subscribe() throws XMPPException{
+    public void subscribe(Connection connection, String nodeName) throws XMPPException{
     	// Create a pubsub manager using an existing Connection
         PubSubManager mgr = new PubSubManager(connection, "pubsub." + connection.getServiceName());
 
         // Get the node
-        LeafNode node = mgr.getNode("testNode");
+        LeafNode node = mgr.getNode(nodeName);
         
         node.addItemEventListener(new ItemEventCoordinator());
         node.subscribe(connection.getUser()+"@localhost");
@@ -68,7 +68,7 @@ public class JabberSmackAPI {
 	    ch.login("user1", "12345");
 	    //c.createNode();
 	    c.publishItem(ch.connection,"testNode","test1","testpayload");
-	    c.subscribe();
+	    c.subscribe(ch.connection,"testNode");
 	    ch.disconnect();
 	    System.exit(0);
     }
