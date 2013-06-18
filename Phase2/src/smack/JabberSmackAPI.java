@@ -16,7 +16,7 @@ import org.jivesoftware.smackx.pubsub.*;
  
 public class JabberSmackAPI {
  
-    XMPPConnection connection;
+    //XMPPConnection connection;
     
     public void createNode(Connection connection, String name) throws XMPPException{
         // Create a pubsub manager using an existing Connection
@@ -48,7 +48,7 @@ public class JabberSmackAPI {
     public void subscribe(Connection connection, String nodeName) throws XMPPException{
     	// Create a pubsub manager using an existing Connection
         PubSubManager mgr = new PubSubManager(connection, "pubsub." + connection.getServiceName());
-
+   
         // Get the node
         LeafNode node = mgr.getNode(nodeName);
         
