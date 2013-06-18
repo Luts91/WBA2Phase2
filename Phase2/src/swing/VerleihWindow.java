@@ -68,14 +68,14 @@ public class VerleihWindow extends JInternalFrame{
 		this.getContentPane().add(verleihen);
 		this.getContentPane().add(verleihButton);
 		this.getContentPane().add(lblName);
-		this.getContentPane().add(lblVerleiher);
+		//this.getContentPane().add(lblVerleiher);
 		this.getContentPane().add(lblKategorie);
 		this.getContentPane().add(lblBeschreibung);
 		this.getContentPane().add(lblZeitraumstart);
 		this.getContentPane().add(lblZeitraumende);
 		this.getContentPane().add(lblPfand);
 		this.getContentPane().add(txtName);
-		this.getContentPane().add(txtVerleiher);
+		//this.getContentPane().add(txtVerleiher);
 		this.getContentPane().add(txtKategorie);
 		this.getContentPane().add(txtBeschreibung);
 		this.getContentPane().add(txtZeitraumstart);
@@ -92,7 +92,8 @@ public class VerleihWindow extends JInternalFrame{
 			   
 			 Objekt o=new Objekt();
 			 o.setName(txtName.getText());
-			 o.setVerleiher(txtVerleiher.getText());
+			 //o.setVerleiher(txtVerleiher.getText());
+			 o.setVerleiher(Main.ch.connection.getUser());
 			 o.setKategorie(txtKategorie.getText());
 			 o.setBeschreibung(txtBeschreibung.getText());
 			 o.setZeitraumStart(txtZeitraumstart.getText());

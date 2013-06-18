@@ -2,7 +2,7 @@
 <benutzerliste>
     <benutzer>
         <Name>Lutz</Name>
-        <Passwort>ichbindergeilste123</Passwort>
+        <Passwort>123</Passwort>
         <Email>lutz.schoenfelder@gmail.com</Email>
         <Wohnort>
             <Stadt>Wermelskirchen</Stadt>
@@ -17,7 +17,7 @@
     </benutzer>
     <benutzer>
         <Name>Max Mustermann</Name>
-        <Passwort>ichbindergeilste123</Passwort>
+        <Passwort>123</Passwort>
         <Email>maxmustermann@gmail.com</Email>
         <Wohnort>
             <Stadt>Gummersbach</Stadt>

@@ -7,6 +7,7 @@ public class Main {
 	public static smack.ConnectionHandler ch; 
 	public static LoginWindow lw;
 	public static MainWindow mw;
+	public static AccountWindow aw;
 	
 	/**
 	 * @param args
@@ -20,10 +21,21 @@ public class Main {
 	}
 	
 	public static void Login(){
-		lw.setVisible(false);
+		lw.dispose();
+		
+		if (aw!=null)
+			aw.dispose();
 		
 		mw=new MainWindow();
 		mw.setVisible(true);
+		
+	}
+	
+	public static void newAccount(){
+		lw.setVisible(false);
+		
+		aw=new AccountWindow();
+		aw.setVisible(true);
 	}
 
 }

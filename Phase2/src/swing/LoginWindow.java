@@ -21,6 +21,7 @@ public class LoginWindow extends JFrame {
 	JLabel lblPw;
 	
 	JButton login;
+	JButton newAcc;
 	
 	public LoginWindow(){
 		this.getContentPane().setLayout(null);
@@ -35,6 +36,7 @@ public class LoginWindow extends JFrame {
 		lblName=new JLabel("Name:");
 		lblPw=new JLabel("Password: ");
 		login=new JButton("Login");
+		newAcc= new JButton("Anmelden");
 		
 		lblName.setBounds(10, 10, 100, 20);
 		lblPw.setBounds(10,40, 100, 20);
@@ -43,17 +45,20 @@ public class LoginWindow extends JFrame {
 		pw.setBounds(110,40,100,20);
 		
 		login.setBounds(110, 70, 100, 20);
+		newAcc.setBounds(10, 70, 100, 20);
 		
 		this.getContentPane().add(lblName);
 		this.getContentPane().add(lblPw);
 		this.getContentPane().add(name);
 		this.getContentPane().add(pw);
 		this.getContentPane().add(login);
+		this.getContentPane().add(newAcc);
 		this.pack();
 		
 		login.addActionListener(new ActionListener(){public void actionPerformed(ActionEvent arg0) {
 			// TODO Auto-generated method stub
 			try {
+				Main.ch.connect();
 				Main.ch.login(name.getText(), pw.getText());
 				System.out.println(name.getText()+" login success");
 				
@@ -67,6 +72,10 @@ public class LoginWindow extends JFrame {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		}});
+		
+		newAcc.addActionListener(new ActionListener(){public void actionPerformed(ActionEvent arg0) {
+			Main.newAccount();
 		}});
 	}
 }
