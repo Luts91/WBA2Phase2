@@ -26,7 +26,7 @@ public class XMLMarshaller {
   public Marshaller m;
   private Unmarshaller um;
   private JAXBContext context;
-  private List<Benutzer> blist; 
+  public List<Benutzer> blist; 
   public List<Objekt> olist; 
   public Benutzerliste benutzerliste;
   public Objekte objekte;

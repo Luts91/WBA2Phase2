@@ -38,7 +38,7 @@ public class VerleihWindow extends JInternalFrame{
 	public VerleihWindow(){
 		this.getContentPane().setLayout(null);
 		this.initWindow();
-		this.setBounds(520, 10, 240, 310);
+		this.setBounds(520, 10, 240, 280);
 		this.setVisible(true);
 	}
 
@@ -48,22 +48,20 @@ public class VerleihWindow extends JInternalFrame{
 		
 		verleihen.setBounds(10,10,100,20);
 		lblName.setBounds(10, 40, 100, 20);
-		lblVerleiher.setBounds(10, 70, 100, 20);
-		lblKategorie.setBounds(10, 100, 100, 20);
-		lblBeschreibung.setBounds(10, 130, 100, 20);
-		lblZeitraumstart.setBounds(10, 160, 100, 20);
-		lblZeitraumende.setBounds(10, 190, 100, 20);
-		lblPfand.setBounds(10, 220, 100, 20);
+		lblKategorie.setBounds(10, 70, 100, 20);
+		lblBeschreibung.setBounds(10, 100, 100, 20);
+		lblZeitraumstart.setBounds(10, 130, 100, 20);
+		lblZeitraumende.setBounds(10, 160, 100, 20);
+		lblPfand.setBounds(10, 190, 100, 20);
 		
 		txtName.setBounds(120, 40, 100, 20);
-		txtVerleiher.setBounds(120, 70, 100, 20);
-		txtKategorie.setBounds(120, 100, 100, 20);
-		txtBeschreibung.setBounds(120, 130, 100, 20);
-		txtZeitraumstart.setBounds(120, 160, 100, 20);
-		txtZeitraumende.setBounds(120, 190, 100, 20);
-		txtPfand.setBounds(120, 220, 100, 20);
+		txtKategorie.setBounds(120, 70, 100, 20);
+		txtBeschreibung.setBounds(120, 100, 100, 20);
+		txtZeitraumstart.setBounds(120, 130, 100, 20);
+		txtZeitraumende.setBounds(120, 160, 100, 20);
+		txtPfand.setBounds(120, 190, 100, 20);
 	
-		verleihButton.setBounds(120,250,100,20);
+		verleihButton.setBounds(120,220,100,20);
 		
 		this.getContentPane().add(verleihen);
 		this.getContentPane().add(verleihButton);

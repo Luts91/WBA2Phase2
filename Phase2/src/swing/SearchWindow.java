@@ -104,8 +104,8 @@ public class SearchWindow extends JInternalFrame {
 		reservieren.addActionListener(new ActionListener(){public void actionPerformed(ActionEvent arg0) {
 			JabberSmackAPI c = new JabberSmackAPI();
 			try {
-				c.createNode(Main.ch.connection, current.getName());
-				c.subscribe(Main.ch.connection, current.getName());
+				c.createNode(Main.ch.connection, olist.get(result.getSelectedIndex()).getName());
+				c.subscribe(Main.ch.connection, olist.get(result.getSelectedIndex()).getName());
 			} catch (XMPPException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

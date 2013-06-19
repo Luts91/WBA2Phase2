@@ -10,12 +10,14 @@ import javax.swing.*;
 public class MainWindow extends JFrame implements WindowListener{
 	SearchWindow sw;
 	VerleihWindow vw;
+	UsersWindow uw;
+	WunschWindow ww;
 	
 	public MainWindow() {
 		this.getContentPane().setLayout(null);
 
 		this.initWindow();
-		this.setBounds(10, 10, 1100, 480);
+		this.setBounds(10, 10, 1100, 800);
 	}
 
 	private void initWindow() {
@@ -24,6 +26,12 @@ public class MainWindow extends JFrame implements WindowListener{
 		
 		vw=new VerleihWindow();
 		this.getContentPane().add(vw);
+		
+		uw=new UsersWindow();
+		this.getContentPane().add(uw);
+		
+		ww=new WunschWindow();
+		this.getContentPane().add(ww);
 		
 		this.pack();
 		this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE); 
